@@ -1,0 +1,153 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Styling umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a2e, #3a0ca3, #4a148c);
+    color: #fff;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #9d4edd;
+}
+
+/* Animasi masuk */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Container utama */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Gambar */
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background: #6a00f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5800b6;
+    transform: scale(1.05);
+}
+
+/* Price List */
+.price-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.price-list h2 {
+    color: #bb86fc;
+    font-size: 1.8em;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* Hubungi Owner */
+.contact {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact h2 {
+    color: #ffcc00;
+}
+
+.contact a {
+    display: block;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
